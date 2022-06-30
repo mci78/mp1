@@ -1,1 +1,95 @@
-TESTE
+<html>
+<META content="text/html; encoding=utf-8" http-equiv=Content-Type>
+<HEAD>
+<Title>LISTA</Title>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.quicksearch/2.3.1/jquery.quicksearch.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<br>
+<body>
+<div class="form-group input-group">
+<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+<input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control">
+</div>
+<style>
+#customers {
+  font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 98%;
+  margin-left: 5mm;
+  margin-right: 10mm;
+  font-size: 18px;
+}
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#customers tr:nth-child(even){background-color: #daf0ec;}
+#customers tr:hover {background-color: #86D7E3;}
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #5fc5d9;
+  color: white;
+}
+</style>
+</HEAD>
+<BODY>
+&nbsp &nbsp &nbsp Arq Teste
+<br>
+<br>
+<Table Border="1" Cellpadding="4" Cellspacing="1" id="customers" class="table table-hover">
+<tr>
+<th>COD</th>
+<th>DESCRICAO</th>
+<th>VALOR</th>
+<th>QTD</th>
+</tr>
+<tbody>
+<tr>
+<td class="TrOdd">0001</td>
+<td class="TrOdd">TESTE 123</td>
+<td class="TrOdd" align="right">R$ 1,00</td>
+<td class="TrOdd" align="right">0</td>
+</tr>
+
+<tr>
+<td class="TrRows">0002</td>
+<td class="TrRows">TESTE 2</td>
+<td class="TrRows" align="right">R$ 2,00</td>
+<td class="TrRows" align="right">1</td>
+</tr>
+
+<tr>
+<td class="TrOdd">0003</td>
+<td class="TrOdd">TESTE 3</td>
+<td class="TrOdd" align="right">R$ 3,00</td>
+<td class="TrOdd" align="right">3</td>
+</tr>
+
+<tr>
+<td class="TrRows">0004</td>
+<td class="TrRows">TESTE 4</td>
+<td class="TrRows" align="right">R$ 5,00</td>
+<td class="TrRows" align="right">2</td>
+</tr>
+
+<tr>
+<td class="TrOdd">0005</td>
+<td class="TrOdd">TESTE 5</td>
+<td class="TrOdd" align="right">R$ 8,00</td>
+<td class="TrOdd" align="right">1</td>
+</tr>
+
+
+</tbody>
+</Table>
+
+<script>
+$("input#txt_consulta").quicksearch("table#customers tbody tr");
+</script>
+
+<br></BODY></HTML>
